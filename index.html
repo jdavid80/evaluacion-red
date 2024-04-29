@@ -8,21 +8,56 @@
     <link rel="stylesheet" href="icons/all.min.css">
 </head>
 <body>
-    <nav>
+    <div class="menu-bar">
+        <a class="bt-menu" href="#"><span class="icon-menu"><i id="iconMenu" class="icon-menu fa-solid fa-bars"></i></span>Evaluación de RED</a>
+    </div>
+
+    
+    <nav id="mainNav">
         <!-- Menú de primer nivel -->
+        
         <ul>
-            <li class="li-1"><a href="#">Inicio</a></li>
-            <li class="li-2"><a href="#">Modelos de Evaluación y red<i class="icon-chevron-style fa-solid fa-chevron-down"></i></a>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Modelos de Evaluación y red<i class="icon-chevron-style fa-solid fa-chevron-down"></i></a>
                 <!-- Menú Segundo Nivel -->
-                <ul>
-                    <li><a href="#">Seleccionando Modelos</a></li>
-                    <li><a href="#">RED</a></li>
+                <ul class="children">
+                    <li><a href="seleccionando-modelos.html">Seleccionando Modelos</a></li>
+                    <li><a href="red.html">RED</a></li>
                 </ul>
             </li>
-            <li class="li-3"><a href="#">Rediseño</a></li>
-            <li class="li-4"><a href="#">Aplicación de Modelos de Evaluación</a></li>
-            <li class="li-5"><a href="">Referencias</a></li>
+            <li><a href="#">Rediseño</a></li>
+            <li><a href="#">Aplicación de Modelos de Evaluación</a></li>
+            <li><a href="">Referencias</a></li>
         </ul>
     </nav>
+    <h1>Modelos de Evaluación de Recursos Educativos Digitales</h1>
+    <div class="presentacion">
+            <div class="box-left">
+                <div class="datos-estudiante">
+                    <h2>Jesús David Calderón Gómez</h2>
+                    <h3>Autor</h3>
+                </div>
+                <div class="datos-maestria">
+                    <h4>Maestría en Tecnologías Digitales Aplicadas a la Educación</h4>
+                </div>
+                <div class="datos-docente">
+                    <h3>Breyner Alexander Parra Rojas</h3>
+                    <h4>Docente</h4>
+                </div>
+               
+                <div class="logos-universidad">
+                    <img class="logo-udes" src="img/logo-udes.jpeg" alt="">
+                    <img class="logo-campus" src="img/campus-virtual.png" alt="" >
+                </div>
+            </div>
+            <div class="box-center"></div>
+           <div class="box-right">
+                <img src="img/david-500x500.jpg" alt="">
+           </div>
+        
+        
+        
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -4,10 +4,25 @@
     margin: 0;
     padding: 0;
 }
-body {
-    /* background-color: darkgray; */
+.logo-udes {
+    width: 200px;
+    position: relative;
+    left: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.logo-campus {
+    width: 110px;
+    position: relative;
+    left: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.menu-bar {
+    display: none;
 }
 nav {
+    width: 100%;
     font-size: 1em;
     display: flex;
     align-items: center;
@@ -32,6 +47,7 @@ nav a {
     align-items: center;
     height: 90px;
 }
+
 nav a:hover {
     background: rgb(4, 61, 122);
 }
@@ -40,13 +56,9 @@ nav > ul > li {
     float: left;
     line-height: 40px;
 }
-.li-2 {
-    width: 360px;
-}
 ul li {
     position: relative;
     text-align: center;
-    /* width: 300px; */
 }
 /* Menú Segundo Nivel */
 nav li li {
@@ -54,7 +66,7 @@ nav li li {
     transition: all 1s;
     overflow: hidden;
     width: 360px;
-    background: rgb(3,82,166);
+    background: rgb(3,82,166, .8);
     border-bottom: 1px solid white;
 }
 nav li:hover > ul > li {
@@ -64,16 +76,123 @@ nav li:hover > ul > li {
 }
 .icon-chevron-style {
     position: relative;
-    /* top: 10px; */
     left: 5px;
 }
-@media only screen and (max-width: 1350px) {
-    ul li {
-        /* width: 280px; */
-        background-color: blue;
-    }
-    nav li li 
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(64,64,64,.8);
 }
+.presentacion {
+    display: grid;
+    margin-top: 50px;
+    grid-template: "empty-left box-left box-center box-right empty-rigth" /
+                    1fr        450px    45px       500px     1fr;
+    color: rgb(64,64,64,.9);
+}
+.box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: box-left;
+}
+.box-center {
+    grid-area: box-center;
+}
+.box-right {
+    border-radius: 50%;
+    overflow: hidden;
+    grid-area: box-right;
+}
+.datos-estudiante, .datos-maestria, .datos-docente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.datos-estudiante h2 {
+    font-size: 1.7em;
+}
+.logos-universidad {
+    width: 100%;
+}
+h4 {
+    text-align: center;
+}
+@media only screen and (max-width: 1320px) {
+    body {
+        padding-top: 77px;
+    }
+    nav {
+        position: fixed;
+        height: calc(100% - 68px);
+        width: 60%;
+        left: -100%;
+        transition: left .7s;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .menu-bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 1px;
+        background-color: rgb(3,82,166);
+        height: 75px;
+        border-bottom: 1px solid white;
+    }
+    .bt-menu {
+        display: block;
+        padding: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+        text-decoration: none;
+        position: relative;
+        top: -15px;
+    }
+    .menu-bar span {
+        font-size: 40px;
+        float: right;
+    }
+    nav ul {
+        text-align: left;
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+    nav ul .children {
+        position: relative;
+        width: 100%;
+    }
+    /* nav ul li:hover .children {
+        /* display: none; */
+    .nav-visible {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .children li {
+        background-color: rgb(38, 112, 191);
+    }
+    .presentacion {
+        display: grid;
+        margin-top: 40px;
+        grid-template: "empty-left box-left empty-right"
+                       "empty-left box-right empty-right" /
+                        1fr        450px     1fr;
+    }
+}
+@media only screen and (max-width: 800px) {
+    nav {
+        width: 100%;
+    }
+}
+
 /* Fuentes */
 /* poppins-regular - latin */
 @font-face {
