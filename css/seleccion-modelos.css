@@ -1,0 +1,164 @@
+h1 {
+    color: rgb(48,48,48);
+}
+h2 {
+    padding: 15px 25px 5px 25px;
+    text-align: center;
+}
+.box-modelos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+.box-modelo {
+    width: 400px;
+    border: 1px solid rgb(96,96,96,.8);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 15px 15px 15px 20px;;
+}
+.titulo-modelo {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 10px 15px;
+}
+.elementos-li {
+    font-size: 1.2em;
+    display: inline-block;
+    line-height: 25px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+    z-index: 20;
+}
+.col-black {
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+}
+.col-black-sub {
+    font-weight: 700;
+    font-size: 1em;
+    background-color: darkcyan;
+    color: white;
+}
+.col-black-center {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.1em;
+}
+.col-2-valelemen-barroso, .col-3-valelemen-barroso, .col-4-valelemen-barroso,
+ .col-5-valelemen-barroso, .col-6-valelemen-barroso {
+    border: 1px solid rgb(64,64,64,.8);
+}
+.col-2-valelemen-barroso, .col-3-valelemen-barroso, .col-4-valelemen-barroso,
+ .col-5-valelemen-barroso {
+    text-align: center;
+    font-weight: 500;
+ }
+/* Diseño tablas */
+
+.box-table-1 {
+    width: 100%;
+    display: grid;
+    grid-template: "empty-left table-1 empty-right" /
+                    1fr        1150px   1fr;
+    margin-bottom: 50px;
+}
+.table-1 {
+    grid-area: table-1;
+    border: 2px solid rgb(96,96,96,.6);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.first-row {
+    background-color: rgb(24,24,24);
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+th, td {
+    border: 1px solid rgb(64,64,64,.8);
+    padding: 10px 15px;
+}
+.col-1 {
+    width: 300px;
+    font-weight: 600;
+}
+.col-2 {
+    width: 850px;
+}
+.col-first {
+    background-color: rgb(64,64,64,.8);
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+}
+.empty-left {
+    grid-area: empty-left;
+}
+.empty-right {
+    grid-area: empty-right;
+}
+.img-red-2 {
+    width: 800px;
+}
+.col-title {
+    font-weight: 900;
+    font-size: 1.6em;
+    color: rgb(48,48,48);
+    text-align: center;
+}
+.col-1-cataldi, .col-2-cataldi, .col-3-cataldi, .col-4-cataldi {
+    width: 50px;
+    border: 1px solid rgb(64,64,64,.8);
+    text-align: center;
+}
+.col-3-cataldi {
+
+}
+@media only screen and (max-width: 1300px) {
+    .box-table-1 {
+        grid-template: "empty-left table-1 empty-right" /
+                        50px       1fr   50px;
+    }
+    .col-1 {
+        width: 25%;
+        font-weight: 600;
+    }
+    .col-2 {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .box-table-1 {
+        grid-template: "empty-left table-1 empty-right" /
+                        20px       1fr   20px;
+        font-size: .9em;
+    }
+    .col-1 {
+        width: auto;
+        font-weight: 600;
+    }
+    .col-2 {
+        width: auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .box-table-1 {
+        grid-template: "empty-left table-1 empty-right" /
+                        10px       1fr   10px;
+                        font-size: .85em;
+    }
+    .col-1 {
+        width: 20%;
+        font-weight: 600;
+    }
+    .col-2 {
+        width: 80%;
+    }
+}
